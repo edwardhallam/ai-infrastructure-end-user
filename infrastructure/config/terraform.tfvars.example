@@ -1,0 +1,22 @@
+# Proxmox Configuration
+proxmox_host = "192.168.1.100"
+proxmox_user = "root@pam"
+proxmox_password = "your-proxmox-password"
+proxmox_node = "pve"
+
+# Network Configuration
+network_gateway = "192.168.1.1"
+network_subnet = "192.168.1.0/24"
+dns_servers = ["8.8.8.8", "8.8.4.4"]
+
+# Resource Allocation
+container_cpu_limit = 2
+container_memory_limit = 4096
+container_storage_limit = 20
+
+# Storage Configuration
+storage_pool = "local-lvm"
+
+# Container Configuration
+librechat_container_name = "librechat"
+mcp_server_container_name = "mcp-server"
