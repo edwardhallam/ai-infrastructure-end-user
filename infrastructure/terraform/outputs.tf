@@ -18,8 +18,8 @@ output "infrastructure_summary" {
     total_memory_mb  = var.container_memory_limit * 2
     total_storage_gb = var.container_storage_limit * 2
     containers = {
-      librechat     = proxmox_lxc.librechat.hostname
-      mcp_server    = proxmox_lxc.mcp_server.hostname
+      librechat  = proxmox_lxc.librechat.hostname
+      mcp_server = proxmox_lxc.mcp_server.hostname
     }
   }
 }
