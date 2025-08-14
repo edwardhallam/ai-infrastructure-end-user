@@ -30,7 +30,7 @@ resource "proxmox_lxc" "librechat" {
 
   nameserver = join(" ", var.dns_servers)
   start      = true
-  tags       = ["ai-infrastructure", "librechat"]
+  tags       = "ai-infrastructure,librechat"
 }
 
 # Create LXC container for MCP Server
@@ -57,5 +57,5 @@ resource "proxmox_lxc" "mcp_server" {
 
   nameserver = join(" ", var.dns_servers)
   start      = true
-  tags       = ["ai-infrastructure", "mcp-server"]
+  tags       = "ai-infrastructure,mcp-server"
 }
